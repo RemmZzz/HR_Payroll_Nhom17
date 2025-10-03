@@ -162,8 +162,8 @@ const Dashboard = () => {
                     <div className="header-controls">
                         <button ref={alertBtnRef} onClick={toggleAlert} className="alert-btn"><AlertIcon /></button>
                         <button ref={notificationBtnRef} onClick={toggleNotification} className="notification-btn"><BellIcon /></button>
-                        <div className="header-avatar-container"><span className="header-avatar-text">Đ</span></div>
-                        <span className="header-user-name">Nguyễn Tuấn Đạt</span>
+                        <div className="header-avatar-container"><span className="header-avatar-text">JD</span></div>
+                        <span className="header-user-name">Jane Doe</span>
                         <button><LogoutIcon /></button>
                     </div>
                 </header>

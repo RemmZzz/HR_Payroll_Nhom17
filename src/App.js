@@ -20,7 +20,7 @@ function App() {
       <Route path="/dashboard" element={<Dashboard />} />
 
       {/* Route mặc định, sẽ hiển thị trang Dashboard khi vào trang chủ */}
-      <Route path="/" element={<Dashboard />} />
+      <Route path="/" element={<Login />} />
 
     </Routes>
   );
