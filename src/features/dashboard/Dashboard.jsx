@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+git add src/features/dashboard/Dashboard.jsximport React, { useState, useEffect, useRef } from 'react';
 
 // --- SVG Icons (Giữ nguyên) ---
 const AlertIcon = () => (
