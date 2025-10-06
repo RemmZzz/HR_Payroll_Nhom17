@@ -1,0 +1,100 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* ===== STYLE CHO PAYROLL LIST ===== */
+
+.payroll-view {
+  max-width: 100% !important;
+  margin: 0 !important;
+  padding: 1rem !important;
+  text-align: left !important;
+}
+
+/* Reset các style mặc định cho component */
+.payroll-view .card {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.payroll-view h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+.payroll-view .form-label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.payroll-view .form-select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Style cho các thẻ thống kê */
+.payroll-view .text-primary { color: #007bff !important; }
+.payroll-view .text-success { color: #28a745 !important; }
+.payroll-view .text-info { color: #17a2b8 !important; }
+
+/* Style cho bảng */
+.payroll-view table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.payroll-view th,
+.payroll-view td {
+  padding: 0.75rem;
+  border: 1px solid #dee2e6;
+  text-align: left;
+}
+
+.payroll-view th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}

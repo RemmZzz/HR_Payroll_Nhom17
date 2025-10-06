@@ -1,0 +1,3 @@
+Component dùng chung toàn bộ ứng dụng
+Header: logo, user info, logout 
+Sidebar/Menu điều hướng 
