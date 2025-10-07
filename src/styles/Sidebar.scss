@@ -1,0 +1,30 @@
+.sidebar {
+    width: 230px;
+    background-color: #2f2f92;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            padding: 10px 0;
+            cursor: pointer;
+            opacity: 0.9;
+
+            &.active,
+            &:hover {
+                font-weight: 600;
+                opacity: 1;
+            }
+        }
+    }
+}

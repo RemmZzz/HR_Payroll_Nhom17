@@ -1,0 +1,79 @@
+.vacation-dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 30px;
+
+    .card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+    }
+
+    .chart-placeholder {
+        background: #f0f2f5;
+        height: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #888;
+        border-radius: 8px;
+        margin: 15px 0;
+    }
+
+    .header-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .filters {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            select,
+            button {
+                padding: 6px 10px;
+                border-radius: 6px;
+                border: 1px solid #ccc;
+                background: #fff;
+            }
+
+            button {
+                background: #3b82f6;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+
+                &:hover {
+                    background: #2563eb;
+                }
+            }
+        }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+
+        th,
+        td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            font-weight: 600;
+            color: #333;
+            font-size: 14px;
+        }
+
+        td {
+            font-size: 14px;
+            color: #444;
+        }
+    }
+}
