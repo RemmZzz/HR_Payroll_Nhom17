@@ -1,7 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Login from './features/auth/Login';
-import Dashboard from './features/dashboard/Dashboard'; // Import file dashboard gộp
+import Dashboard from './features/dashboard/Dashboard'; 
+import Alerts_notifications from './features/alerts/Alerts_notifications';
 
 function App() {
   return (
@@ -13,10 +14,10 @@ function App() {
           <div className="flex items-center justify-center min-h-screen bg-slate-50">
             <Login />
           </div>
-        } 
-      />
-
-      {/* Route cho trang Dashboard, vẫn giữ lại để có thể truy cập trực tiếp */}
+    } 
+  />
+  <Route path="/alerts_notifications" element={<Alerts_notifications />} />
+  {/* Route cho trang Dashboard, vẫn giữ lại để có thể truy cập trực tiếp */}
       <Route path="/dashboard" element={<Dashboard />} />
 
       {/* Route mặc định, sẽ hiển thị trang Dashboard khi vào trang chủ */}
