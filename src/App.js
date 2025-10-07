@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Login from './features/auth/Login';
 import Dashboard from './features/dashboard/Dashboard'; // Import file dashboard gộp
+import VacationDays from "./features/vacation/VacationDays";
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
 
       {/* Route mặc định, sẽ hiển thị trang Dashboard khi vào trang chủ */}
       <Route path="/" element={<Login />} />
+
+      {/* /vocation-days */}
+      <Route path="/vacation-days" element={<VacationDays />} />
+
 
     </Routes>
   );
