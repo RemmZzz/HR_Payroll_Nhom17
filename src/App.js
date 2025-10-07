@@ -17,11 +17,11 @@ function App() {
         } 
       />
 
-      {/* Route cho trang Dashboard, vẫn giữ lại để có thể truy cập trực tiếp */}
-      <Route path="/dashboard" element={<Dashboard />} />
-
       {/* Route mặc định, sẽ hiển thị trang Dashboard khi vào trang chủ */}
       <Route path="/" element={<Login />} />
+
+      {/* Route cho trang Dashboard, vẫn giữ lại để có thể truy cập trực tiếp */}
+      <Route path="/dashboard" element={<Dashboard />} />
 
       {/* /vocation-days */}
       <Route path="/vacation-days" element={<VacationDays />} />
