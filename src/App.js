@@ -1,7 +1,11 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Login from './features/auth/Login';
-import Dashboard from './features/dashboard/Dashboard'; // Import file dashboard gộp
+import Dashboard from './features/dashboard/Dashboard';
+// Import thêm các component payroll và employees
+import Employees from './features/employees/Employees';
+import Payroll from './features/payroll/Payroll';
+import EmployeeDetail from './features/employees/EmployeeDetail';
 
 function App() {
   return (
@@ -16,10 +20,19 @@ function App() {
         } 
       />
 
-      {/* Route cho trang Dashboard, vẫn giữ lại để có thể truy cập trực tiếp */}
+      {/* Route cho trang Dashboard */}
       <Route path="/dashboard" element={<Dashboard />} />
 
-      {/* Route mặc định, sẽ hiển thị trang Dashboard khi vào trang chủ */}
+      {/* Route cho trang Employees */}
+      <Route path="/employees" element={<Employees />} />
+
+      {/* Route cho trang Employee Detail */}
+      <Route path="/employees/:employeeId" element={<EmployeeDetail />} />
+
+      {/* Route cho trang Payroll */}
+      <Route path="/payroll" element={<Payroll />} />
+
+      {/* Route mặc định */}
       <Route path="/" element={<Login />} />
 
     </Routes>
