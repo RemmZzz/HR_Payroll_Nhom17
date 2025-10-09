@@ -1,8 +1,9 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Login from './features/auth/Login';
-import Dashboard from './features/dashboard/Dashboard'; // Import file dashboard gộp
-import VacationDays from "./features/vacation/VacationDays";
+import Dashboard from './features/dashboard/Dashboard';
+import VacationDays from './features/vacation/VacationDays';
+import Alerts_notifications from './features/alerts/Alerts_notifications';
 
 function App() {
   return (
@@ -17,16 +18,17 @@ function App() {
         } 
       />
 
-      {/* Route cho trang Dashboard, vẫn giữ lại để có thể truy cập trực tiếp */}
-      <Route path="/dashboard" element={<Dashboard />} />
-
-      {/* Route mặc định, sẽ hiển thị trang Dashboard khi vào trang chủ */}
+      {/* Route mặc định, sẽ hiển thị trang Login khi vào trang chủ */}
       <Route path="/" element={<Login />} />
 
-      {/* /vocation-days */}
+      {/* Route cho trang Dashboard */}
+      <Route path="/dashboard" element={<Dashboard />} />
+
+      {/* Route cho trang thông báo */}
+      <Route path="/alerts_notifications" element={<Alerts_notifications />} />
+
+      {/* Route cho trang nghỉ phép */}
       <Route path="/vacation-days" element={<VacationDays />} />
-
-
     </Routes>
   );
 }
