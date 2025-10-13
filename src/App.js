@@ -6,6 +6,7 @@ import VacationDays from "./features/vacation/VacationDays";
 import Alerts_notifications from "./features/alerts/Alerts_notifications";
 import EmployeeDetail from "./features/employees/EmployeeDetail";
 import PayrollList from "./features/payroll/PayrollList";
+import Reports from "./features/reports/Reports";
 
 function App() {
   return (
@@ -19,6 +20,11 @@ function App() {
           </div>
         }
       />
+
+
+      
+      {/* Route cho trang Reports */}
+      <Route path="/report" element={<Reports />} />
 
       {/* Route mặc định, sẽ hiển thị trang Login khi vào trang chủ */}
       <Route path="/" element={<Login />} />

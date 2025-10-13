@@ -1,0 +1,70 @@
+.report-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+
+    .card {
+        background: #fff;
+        border: 1px solid #e5e7eb;
+        border-radius: 12px;
+        padding: 24px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+
+        h2 {
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+
+        label {
+            font-weight: 500;
+            display: block;
+            margin-top: 8px;
+            margin-bottom: 4px;
+        }
+
+        select,
+        input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 16px;
+            margin-top: 8px;
+
+            label {
+                display: flex;
+                align-items: center;
+                gap: 4px;
+                font-size: 14px;
+            }
+        }
+
+        .date-range {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+        }
+
+        .export-btn {
+            margin-top: 20px;
+            width: 100%;
+            background-color: #4f46e5;
+            color: white;
+            padding: 10px;
+            font-weight: 600;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover {
+                background-color: #4338ca;
+            }
+        }
+    }
+}
